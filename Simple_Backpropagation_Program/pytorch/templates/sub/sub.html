@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+    {% block title %} Input How much size of number you want to put it. {% endblock %}
+    {% block content %}
+        {% block input %}
+        <form action="{% url 'input' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="number" name="number_input" min="2" max="3">
+            <input type="submit" value="submit">
+        </form>
+        {% endblock %}
+    {% endblock %}
