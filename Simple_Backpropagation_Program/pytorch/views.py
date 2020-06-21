@@ -2,9 +2,6 @@ from django.shortcuts import render
 
 
 # Create your views here.
-from pytorch.forms import InputForm
-
-
 def index(request):
     return render(request, 'index.html', {})
 
@@ -21,8 +18,8 @@ def sub(request):
     #     that helps save data users input numbers into this
     #     Simple BackPropagation Algorithm.
     #     """
-    context = {'form': InputForm()}
-    return render(request, "sub/sub.html", context)
+    # context = {'form': }
+    return render(request, "sub/sub.html", {})
     # return render(request, 'sub/sub.html', {})
 
 
