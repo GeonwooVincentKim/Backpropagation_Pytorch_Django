@@ -5,3 +5,4 @@ import torch.nn.functional as F
 
 
 # Number of Dimension
+n_dim = 2
